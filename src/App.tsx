@@ -82,6 +82,21 @@ function OverviewSection() {
         </div>
       </div>
 
+      {/* Amnezia note */}
+      <div className="bg-gradient-to-r from-green-900/20 to-emerald-900/20 border border-green-700/40 rounded-xl p-5">
+        <div className="flex items-start gap-3">
+          <div className="text-2xl">✅</div>
+          <div>
+            <h3 className="text-lg font-bold text-green-300 mb-1">Amnezia удалять НЕ нужно</h3>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Достаточно просто <strong className="text-green-200">отключить его автозапуск</strong> и убедиться что он не запущен. 
+              Если с mihomo что-то пойдёт не так — всегда можно вернуться к Amnezia одним кликом. 
+              Проблема была не в самом Amnezia, а в <em>одновременном запуске</em> двух TUN-клиентов.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Problem vs Solution */}
       <div className="grid md:grid-cols-2 gap-6">
         <div className="bg-red-900/10 border border-red-800/50 rounded-xl p-6">
