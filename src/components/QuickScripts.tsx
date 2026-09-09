@@ -12,11 +12,8 @@ set -e
 echo "=== Fedora Dual VPN Setup ==="
 echo "mihomo (Clash Meta) + openvpn3"
 
-# 1. Отключаем Amnezia (НЕ удаляем — оставляем как запасной вариант)
-echo "[1/7] Disabling Amnezia (keeping installed)..."
-sudo systemctl stop amneziavpn 2>/dev/null || true
-sudo systemctl disable amneziavpn 2>/dev/null || true
-sudo pkill -f amnezia 2>/dev/null || true
+# 1. Чистим артефакты от предыдущих попыток
+echo "[1/7] Cleaning up leftover routes/rules..."
 sudo ip link delete tun2 2>/dev/null || true
 sudo iptables -F 2>/dev/null || true
 sudo iptables -t mangle -F 2>/dev/null || true

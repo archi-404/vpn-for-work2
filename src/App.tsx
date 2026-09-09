@@ -82,16 +82,15 @@ function OverviewSection() {
         </div>
       </div>
 
-      {/* Amnezia note */}
+      {/* Important note */}
       <div className="bg-gradient-to-r from-green-900/20 to-emerald-900/20 border border-green-700/40 rounded-xl p-5">
         <div className="flex items-start gap-3">
-          <div className="text-2xl">✅</div>
+          <div className="text-2xl">ℹ️</div>
           <div>
-            <h3 className="text-lg font-bold text-green-300 mb-1">Amnezia удалять НЕ нужно</h3>
+            <h3 className="text-lg font-bold text-green-300 mb-1">Важно</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Достаточно просто <strong className="text-green-200">отключить его автозапуск</strong> и убедиться что он не запущен. 
-              Если с mihomo что-то пойдёт не так — всегда можно вернуться к Amnezia одним кликом. 
-              Проблема была не в самом Amnezia, а в <em>одновременном запуске</em> двух TUN-клиентов.
+              Amnezia VPN <strong className="text-green-200">не трогаем</strong> — запускаешь её по необходимости. 
+              mihomo и Amnezia могут работать параллельно, просто не запускай их одновременно.
             </p>
           </div>
         </div>
